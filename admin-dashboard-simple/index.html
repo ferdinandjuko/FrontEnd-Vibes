@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Admin Dashboard | Redesign</title>
     <link rel="stylesheet" href="style.css">
+    <!-- CDN chartJs-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
     <script src="./script.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+
+    <!-- CDN chartJs-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js" defer></script> -->
+    <!--<script src="node_modules/chart.js/dist/chart.umd.js" defer></script>-->
 </head>
 <body>
     <div class="container">
@@ -133,12 +139,22 @@
                 <div class="card">
                     <div>
                         <div class="numbers">$7,842</div>
-                        <div class="cardName">Earing</div>
+                        <div class="cardName">Earning</div>
                     </div>
                     <div class="iconBx">
                         <ion-icon name="cash-outline"></ion-icon>
                     </div>
                 </div> 
+            </div>
+
+            <!-- Add Charts -->
+            <div class="graphBox">
+                <div class="box">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="box">
+                    <canvas id="earning"></canvas>
+                </div>
             </div>
 
             <div class="details">
@@ -148,6 +164,7 @@
                         <h2>Recent orders</h2>
                         <a href="#" class="btn">View All</a>
                     </div>
+                    <!--<table style="margin-top: -208px;">-->
                     <table>
                         <thead>
                             <tr>
@@ -234,91 +251,69 @@
                     <table>
                         <tr>
                             <td>
-                                <div class="imgBx">
-                                    <img src="./img-2.png" alt="">
-                                </div>
+                                <div class="imgBx"><img src="./img-2.png" alt=""></div>
                             </td>
-                            <td width="60px"><h4>David<br><span>Italy</span></h4></td>
+                            <td width="60px"><h4>David<br><span>Nigeia</span></h4></td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="imgBx">
-                                    <img src="./img-3.png" alt="">
-                                </div>
+                                <div class="imgBx"><img src="./img-3.png" alt=""></div>
                             </td>
-                            <td width="60px"><h4>David<br><span>Italy</span></h4></td>
+                            <td width="60px"><h4>Armanteros<br><span>Spain</span></h4></td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="imgBx">
-                                    <img src="./img-4.png" alt="">
-                                </div>
+                                <div class="imgBx"><img src="./img-4.png" alt=""></div>
                             </td>
-                            <td width="60px"><h4>David<br><span>Italy</span></h4></td>
+                            <td width="60px"><h4>Amelia<br><span>France</span></h4></td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="imgBx">
-                                    <img src="./img-5.png" alt="">
-                                </div>
+                                <div class="imgBx"><img src="./img-5.png" alt=""></div>
                             </td>
-                            <td width="60px"><h4>David<br><span>Italy</span></h4></td>
+                            <td width="60px"><h4>Didikof<br><span>England</span></h4></td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="imgBx">
-                                    <img src="./img-6.png" alt="">
-                                </div>
+                                <div class="imgBx"><img src="./img-6.png" alt=""></div>
                             </td>
-                            <td width="60px"><h4>David<br><span>Italy</span></h4></td>
+                            <td width="60px"><h4>Van Djik<br><span>Netherland</span></h4></td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="imgBx">
-                                    <img src="./img-7.png" alt="">
-                                </div>
+                                <div class="imgBx"><img src="./img-7.png" alt=""></div>
                             </td>
-                            <td width="60px"><h4>David<br><span>Italy</span></h4></td>
+                            <td width="60px"><h4>Liu Chee<br><span>China</span></h4></td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="imgBx">
-                                    <img src="./img-8.png" alt="">
-                                </div>
+                                <div class="imgBx"><img src="./img-8.png" alt=""></div>
                             </td>
-                            <td width="60px"><h4>David<br><span>Italy</span></h4></td>
+                            <td width="60px"><h4>Nikita<br><span>USA</span></h4></td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="imgBx">
-                                    <img src="./img-9.png" alt="">
-                                </div>
+                                <div class="imgBx"><img src="./img-9.png" alt=""></div>
                             </td>
-                            <td width="60px"><h4>David<br><span>Italy</span></h4></td>
+                            <td width="60px"><h4>Rocky<br><span>Canada</span></h4></td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="imgBx">
-                                    <img src="./img-10.png" alt="">
-                                </div>
+                                <div class="imgBx"><img src="./img-10.png" alt=""></div>
                             </td>
-                            <td width="60px"><h4>David<br><span>Italy</span></h4></td>
+                            <td width="60px"><h4>David<br><span>Lybia</span></h4></td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="imgBx">
-                                    <img src="./img-11.png" alt="">
-                                </div>
+                                <div class="imgBx"><img src="./img-11.png" alt=""></div>
                             </td>
-                            <td width="60px"><h4>David<br><span>Italy</span></h4></td>
+                            <td width="60px"><h4>David<br><span>Russia</span></h4></td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="imgBx">
-                                    <img src="./img-12.png" alt="">
-                                </div>
+                                <div class="imgBx"><img src="./img-12.png" alt=""></div>
                             </td>
-                            <td width="60px"><h4>David<br><span>Italy</span></h4></td>
+                            <td width="60px"><h4>David<br><span>Liberia</span></h4></td>
                         </tr>
                     </table>
                 </div>
