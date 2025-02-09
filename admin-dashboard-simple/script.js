@@ -22,7 +22,7 @@ list.forEach((item) =>
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var earning = document.getElementById('earning').getContext('2d');
-var myChart = new Chart(ctx, {
+var yChart = new Chart(ctx, {
     type: 'polarArea',
     data: {
         labels: ['Facebook', 'Youtube', 'Amazon'],
@@ -42,14 +42,13 @@ var myChart = new Chart(ctx, {
     }
 });
 
-
 var myChart = new Chart(earning, {
     type: 'bar',
     data: {
         labels: ['January', 'February', 'March', 'April', 'Mey', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
         datasets: [{
             label: 'Earning',
-            data: [1200, 1090, 3000, 5400, 1220, 3600, 1200, 54000, 4578, 2566, 8545,4587,  9000],
+            data: [1200, 1090, 3000, 5400, 1220, 3600, 1200, 4578, 2566, 8545, 4587, 9000],
             backgroundColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',

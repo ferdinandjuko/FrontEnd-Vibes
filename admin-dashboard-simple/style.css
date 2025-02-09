@@ -267,7 +267,7 @@ body {
     width: 100%;
     padding: 20px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-gap: 30px;
     min-height: 200px;
 }
@@ -277,6 +277,7 @@ body {
     background: #fff;
     padding: 20px;
     width: 100%;
+    height: 100%;
     box-shadow: 0 7px 25px rgba(0, 0, 0, .08);
     border-radius: 20px;
 }
@@ -473,7 +474,8 @@ body {
         height: auto;
     }
     .recentOrders table {
-        margin-top: -233px;
+        /* margin-top: -233px; */
+        margin-top: -251px;
     }
     .cardBox {
         grid-template-columns: repeat(2,1fr);
