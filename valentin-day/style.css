@@ -1,0 +1,93 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+.heart,
+.heart:after 
+{
+  position: absolute;
+  content: "";
+  left: 80px;
+  top: 0;
+  width: 220px;
+  height: 390px;
+  background: #fc2e5a;
+  transform: rotate(-45deg);
+  border-radius: 50% 50% 0 0;
+}
+.heart:after {
+  transform: rotate(90deg); /* 90 - 45 = 45 */
+  /* * original after transform: rotate(90deg); */
+  transform-origin :29% 63%;
+  /* Coin supérieur gauche */
+  /* transform-origin: 50% 0%;  */
+  /* Coin inférieur droit */
+  /* transform-origin: 100% 100%; */
+  /* Coin supérieur gauche */ 
+  /* transform-origin: top left; */
+  /* Bord inférieur */
+  /* transform-origin: bottom;  */
+  /* Centre avec une profondeur de -50px */
+  /* transform-origin: 50% 50% -50px; */
+
+}
+  
+.pulsing {
+   animation: pounding .8s linear infinite alternate;
+}
+.text {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  z-index: 999;
+
+}
+  
+.valentine-input {
+  background: none;
+  border: none;
+  font-family: "Kaushan Script";
+  font-size: 1em;
+  width: 100%;
+}
+.ecrit {
+    font-family: "Kaushan Script";
+    font-size: 2em;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.typing {
+  -webkit-animation: texte 2.7s steps(28, end) infinite;
+}
+@-webkit-keyframes texte { 
+    0% { width: 0;border-right: .06em solid #000; } 
+    99% { border-right: .06em solid #000;}
+    100% { border-right: 0;}
+}
+@-webkit-keyframes barre { 
+    
+}
+@keyframes pounding {
+  0% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+  
+@media screen (max-width:1000px) {
+    .animation {
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+    }
+    .coeur {
+      position: absolute;
+    }
+}
