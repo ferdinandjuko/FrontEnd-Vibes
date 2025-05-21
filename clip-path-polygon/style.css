@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    gap: 10px;
+}
+
+.container .card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 -70px;
+    object-fit: cover;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.container .card:nth-child(1) {
+    background: url('img6.png');
+    background-size: cover;
+}
+.container .card:nth-child(2) {
+    background: url('img5.png');
+    background-size: cover;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.container .card:nth-child(3) {
+    background: url('img7.png');
+    background-size: cover;
+}
+.container .card:nth-child(4) {
+    background: url('img8.png');
+    background-size: cover;
+}
+
+.container .card{
+    transition: 0.57s;
+}
+
+.container .card:hover {
+    background-position: 60%;
+}
