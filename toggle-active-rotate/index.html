@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Active Rotate</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" defer src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule defer src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js" defer></script>
+    <!-- Custom Select Menu Dropdown using Html CSS & Vanilla Javascript _ Dropdown Menu -->
+</head>
+<body>
+    <div class="dropdown">
+        <input type="text" class="textBox" placeholder="Dropdown Menu" readonly>
+        <div class="option">
+            <div onclick="show('Html')">
+                <ion-icon name="logo-html5"> Html</ion-icon>
+            </div>
+            <div onclick="show('CSS')">
+                <ion-icon name="logo-css3">CSS</ion-icon>
+            </div>
+            <div onclick="show('NodeJs')">
+                <ion-icon name="logo-nodejs">NodeJs</ion-icon>
+            </div>
+            <div onclick="show('Figma')">
+                <ion-icon name="logo-figma">Figma</ion-icon>
+            </div>
+            <div onclick="show('ReactJs')">
+                <ion-icon name="logo-react">ReactJs</ion-icon>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
