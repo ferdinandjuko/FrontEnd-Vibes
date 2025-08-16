@@ -29,7 +29,10 @@ header {
 }
 
 header .logo img {
-    max-width: 200px;
+    max-width: 100px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 header .logo ion-icon {
   color: #009688;
@@ -66,12 +69,13 @@ header ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 60px;
 }
 
 .banner  .content .contentBox {
     text-align: center;
 }
-.banner .content .contentBox img{
+.banner .content .contentBox img {
     width: 100%;
 }
 
@@ -91,6 +95,7 @@ header ul li a:hover {
     border-radius: 3px;
     letter-spacing: 1px;
     text-decoration: none;
+    transition: .5s;
 }
 .banner .content .contentBox .btn:hover {
     letter-spacing: 2px;
@@ -107,7 +112,7 @@ header ul li a:hover {
 
 .sci h3 {
     font-weight: 500;
-    color: rgba(255,255,255,.5);
+    color: rgba(255,255,255,.75);
     letter-spacing: 1px;
 }
 .sci li {
@@ -154,4 +159,29 @@ header ul li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+/* now, make it responsive */
+@media (max-width: 991px) {
+    .banner {
+        grid-template-columns: 1fr;
+    }
+    header {
+        padding: 20px 40px;
+    }
+    .banner .content {
+        padding: 40px;
+        height: 70pvh;
+    }
+    .sci {
+        right: 40px;
+    }
+    .banner .images .imgBx {
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+
 }
