@@ -1,0 +1,107 @@
+/* multiple box-shadow on hover to reflect light effect #2196f3 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Consolas', monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #031321;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: .2s;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: linear-gradient(45deg, transparent, #2196f3);
+    z-index: -1;
+}
+
+a:hover {
+    color: #255784;
+    background: #2196f3;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    box-shadow: 0 0 10px #2196f3,
+        0 0 40px #2196f3,
+        0 0 80px #2196f3;
+    transition: 3s;
+}
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+a span:nth-child(2) {
+    right: 0;
+    top: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: .5s
+}
+
+a span:nth-child(4) {
+    left: 0;
+    bottom: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: .75s;
+}
