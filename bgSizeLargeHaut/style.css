@@ -1,0 +1,43 @@
+/* background-size: 20px 20px; defines the size of the background image */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --clr: #4fb6ff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--clr);
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    height: 320px;
+    background: #fff radial-gradient(var(--clr) 0px,
+            var(--clr) 7px,
+            transparent 7px);
+    /*La propriété background-size définit la taille de l'image d'arrière-plan.
+    Dans votre cas, l'image d'arrière-plan n'est pas une image, 
+    mais un dégradé radial (radial-gradient) que vous avez défini.
+    Le navigateur considère ce dégradé comme une image d'arrière-plan.*/
+    background-position: -10px;
+    background-size: 20px 20px;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    background: url(../image/bg2.jpg);
+    background-size: cover;
+    box-shadow: 0 0 0 10px #fff;
+}
