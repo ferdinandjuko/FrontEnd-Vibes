@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-/* bg linear-gradient(90deg, #0e3959 0%, #0e3959 30%, #03a9f5 30%, #03a9f5 100%) */
+/* dg => Fractional Unit(fr): gtcolumns 2fr 1fr, gtrows 5fr 4fr */
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +43,7 @@ body {
 }
 
 .contact {
-    padding: 4px;
+    padding: 40px;
     background: #fff;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 }
@@ -196,4 +196,54 @@ body {
 
 .sci li a:hover {
     color: #fff;
+}
+
+.map {
+    padding: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    body {
+        background: #03a9f5;
+    }
+
+    .contactUs {
+        padding: 20px;
+    }
+
+    .box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "form"
+            "info"
+            "map";
+    }
+
+    .formBox .row50 {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .inputBox {
+        width: 100%;
+    }
+
+    .contact {
+        padding: 30px;
+    }
+
+    .map {
+        min-height: 300px;
+        padding: 0;
+    }
+
+
 }
