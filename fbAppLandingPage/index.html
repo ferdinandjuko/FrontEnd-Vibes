@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>facebook App Landing Page</title>
+    <title>Facebook App Landing Page</title>
     <!-- https://www.youtube.com/watch?v=ciP_rYTM2Uc -->
      <link rel="stylesheet" href="style.css">
+     <!-- .contentBox>(div.text+div.dots+div.imgBx+ul.sci) -->
      <!-- section>(header>((a.logo>img)+(ul>(li>a)*3)+(a.app>ion-icon[name="arrow-down-outline"]))) -->
 </head>
 <body>
@@ -21,9 +22,46 @@
             </ul>
             <a href="#" class="app"><ion-icon name="arrow-down-outline"></ion-icon> Download App</a>
         </header>
+
+        <div class="contentBox">
+
+            <div class="text">
+                <h2>Facebook</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam aliquid deleniti aperiam praesentium doloribus voluptatibus provident quod error nemo, sequi, minus ad? Fuga earum natus amet, veniam quidem cum pariatur ullam quibusdam necessitatibus ratione optio facere aut, at rerum culpa.</p>
+                <h4>Download the app</h4>
+                <a href="#" class="btn"><ion-icon name="logo-apple"></ion-icon> Aplle Store</a>
+                <a href="#" class="btn"><ion-icon name="logo-google-playstore"></ion-icon> Google Play</a>
+            </div>
+            
+            
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            
+            
+            <div class="imgBx">
+                <img src="../image/fb1.png" class="slides active" alt="fb1">
+                <img src="../image/fb2.png" class="slides" alt="fb2">
+                <img src="../image/fb3.png" class="slides" alt="fb3">
+                <img src="../image/fb4.png" class="slides" alt="fb4">
+                <img src="../image/fb5.png" class="slides" alt="fb5">
+            </div>
+
+            <ul class="sci">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+        </div>
+
     </section>
 
     <script type='module' defer src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
     <script nomodule defer src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script>
+    <script src="script.js"></script>
 </body>
 </html>
