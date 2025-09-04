@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
+/* bg become color of .dot on responsive and .dot become color of their bg */
 /* header with a logo, ul with 3 li and a .app right 100px */
 * {
     margin: 0;
@@ -29,7 +30,7 @@ header {
 }
 
 header .logo img {
-    min-width: 50px;
+    max-width: 50px;
     margin-right: 20px;
 }
 
@@ -60,7 +61,7 @@ header ul li a.active {
     justify-content: center;
     align-items: center;
     background: #fff;
-    color: #3b5983;
+    color: #3b5998;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -75,4 +76,166 @@ header ul li a.active {
 .app ion-icon {
     margin-right: 10px;
     font-size: 1.4em;
+}
+
+.contentBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentBox .text {
+    max-width: 800px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.contentBox .text h2 {
+    font-size: 6em;
+    color: #3b5998;
+}
+
+.contentBox .text p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.8em;
+}
+
+.contentBox .text h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.btn {
+    background: #3b5998;
+    color: #fff;
+    display: inline-flex;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    margin: 5px 20px 5px 0;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #2d88ff;
+}
+
+.btn ion-icon {
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+
+.imgBx img {
+    margin-left: 50px;
+    margin-right: 100px;
+    max-width: 300px;
+    height: 400px;
+    display: none;
+}
+
+.imgBx img.active {
+    display: block;
+}
+
+.dots {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dots .dot {
+    position: relative;
+    width: 10px;
+    height: 30px;
+    background: rgba(255, 255, 255, .25);
+    display: inline-flex;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.dots .dot.active {
+    background: #fff;
+}
+
+.sci {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.sci li a {
+    font-size: 1.8em;
+    color: #3b5998;
+}
+
+.sci li a:hover {
+    color: #2d88ff;
+}
+
+/* Now, make it responsive */
+@media (max-width: 992px) {
+    header {
+        padding: 30px;
+        justify-content: space-between;
+    }
+
+    .main {
+        padding: 30px;
+        background: #fff;
+    }
+
+    .app {
+        display: none;
+    }
+
+    .contentBox {
+        flex-direction: column-reverse;
+        margin: 100px 0;
+    }
+
+    .contentBox .text {
+        padding-bottom: 0;
+    }
+
+    .imgBx img {
+        margin: 0;
+    }
+
+    .dots {
+        position: relative;
+        top: initial;
+        transform: none;
+        right: initial;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .dots .dot {
+        width: 25px;
+        height: 10px;
+        background: #3f51b5;
+        opacity: .2;
+    }
+
+    .dots .dot.active {
+        background: #3b5998;
+        opacity: 1;
+    }
+
+    .contentBox .text h2 {
+        font-size: 3em;
+    }
 }
