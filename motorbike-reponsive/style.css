@@ -1,5 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700&display=swap');
+
+/** main::before center his content with translate(-50%,-50%) */
 * {
     margin: 0;
     padding: 0;
@@ -193,6 +194,7 @@ header {
     }
     .toggle {
         position: relative;
+        display: block;
         width: 32px;
         height: 40px;
         display: flex;
