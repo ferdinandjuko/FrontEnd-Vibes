@@ -1,4 +1,4 @@
-// Library Swiper Configuration
+// LibrarySwiperConfig: effect, grabCursor, centerSlides, slidesPerview, coverFlowEffect, pagination
 var swiper = new Swiper('.swiper-container', {
     effect: 'coverflow',
     grabCursor: true,
