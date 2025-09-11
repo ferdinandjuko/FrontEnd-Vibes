@@ -1,4 +1,4 @@
 let navigation = document.querySelector('.navigation');
-navigation.addEventListener('click', function(){
+navigation.onclick = () => {
     navigation.classList.toggle('active')
-})
+}
