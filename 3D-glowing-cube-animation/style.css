@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswlad:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +28,7 @@ body {
     0% {
         transform: rotateX(-30deg) rotateX(0deg);
     }
+
     100% {
         transform: rotateX(-30deg) rotateY(360deg);
     }
@@ -89,8 +91,8 @@ body {
     transform: translateZ(-380px);
     filter: blur(20px);
     box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
-    0 0 200px rgba(0, 255, 0, .4),
-    0 0 200px rgba(0, 255, 0, .6),
-    0 0 200px rgba(0, 255, 0, .8),
-    0 0 200px rgba(0, 255, 0, 1);
+        0 0 200px rgba(0, 255, 0, 0.4),
+        0 0 200px rgba(0, 255, 0, 0.6),
+        0 0 200px rgba(0, 255, 0, 0.8),
+        0 0 200px rgba(0, 255, 0, 1);
 }
