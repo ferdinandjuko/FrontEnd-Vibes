@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapus.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+/* feat: implement inline-block for clock numbers counter-rotation
+
+- Add display: inline-block to .clock span b for transform support
+- Enables proper number orientation after parent rotation
+- Critical: inline elements cannot use transform property
+- Numbers now stay upright while container rotates (30deg * --i)
+ */
 * {
     margin: 0;
     padding: 0;
@@ -21,11 +29,11 @@ body {
     border-radius: 20px;
     border-top-left-radius: 225px;
     border-top-right-radius: 225px;
-    box-shadow: 25px 25px 75px rgba(0,0,0,0.75),
-    10px 10px 70px rgba(0,0,0,0.25),
-    inset 5px 5px 10px rgba(0,0,0,0.5),
-    inset 5px 5px 20px rgba(255,255,255,0.2),
-    inset -5px -5px 15px rgba(0,0,0,0.75);
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.75),
+        10px 10px 70px rgba(0, 0, 0, 0.25),
+        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,13 +46,14 @@ body {
     height: 450px;
     background: #2f363e;
     border-radius: 50%;
-    box-shadow: 10px 50px 70px rgba(0,0,0,0.25),
-    inset 5px 5px 10px rgba(0,0,0,0.5),
-    inset 5px 5px 20px rgba(255,255,255,0.2),
-    inset -5px -5px 15px rgba(0,0,0,0.75);
+    box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
+        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .clock::before {
@@ -69,7 +78,7 @@ body {
 
 .clock span b {
     font-size: 2em;
-    opacity: .25;
+    opacity: 0.25;
     font-weight: 600;
     display: inline-block;
     transform: rotate(calc(-30deg * var(--i)));
@@ -79,11 +88,11 @@ body {
     position: absolute;
     width: 300px;
     height: 300px;
-    border: 2px solid rgba(0,0,0,0.25);
+    border: 2px solid rgba(0, 0, 0, 0.25);
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
     z-index: 10;
 }
 
@@ -92,9 +101,9 @@ body {
     width: 6px;
     height: 50%;
     background: var(--clr);
-    opacity: .75;
+    opacity: 0.75;
     transform-origin: bottom;
-    transform: scaleY(.5);
+    transform: scaleY(0.5);
 }
 
 .circle:nth-child(1) i {
@@ -104,14 +113,14 @@ body {
 .circle:nth-child(2) i {
     width: 6px;
 }
- 
-.circle2 {
+
+.circle.circle2 {
     width: 240px;
     height: 240px;
     z-index: 9;
 }
 
-.circle3 {
+.circle.circle3 {
     width: 180px;
     height: 180px;
     z-index: 8;
@@ -126,21 +135,21 @@ body {
     border-radius: 50%;
     background: var(--clr);
     box-shadow: 0 0 20px var(--clr),
-    0 0 60px var(--clr);
+        0 0 60px var(--clr);
 }
 
-/* digial clock style */
+/* digital clock style */
 #time {
     margin-bottom: 40px;
     display: flex;
     padding: 10px 20px;
     font-size: 2em;
     font-weight: 600;
-    border: 2px solid rgba(0,0,0,0.5);
+    border: 2px solid rgba(0, 0, 0, 0.5);
     border-radius: 40px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5),
-    inset 5px 5px 20px rgba(255,255,255,0.2),
-    inset -5px -5px 15px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.75);
 }
 
 #time div {
@@ -159,7 +168,7 @@ body {
 }
 
 #time div:last-child {
-    font-size: .5em;
+    font-size: 0.5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,6 +183,7 @@ body {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
