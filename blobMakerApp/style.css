@@ -1,0 +1,41 @@
+/* 
+feat: Implement animated SVG blob with morphing shapes and gradient
+
+✨ Features:
+- 5-stage morphing animation using quadratic Bézier curves (Q commands)
+- Smooth 10-second infinite loop transitions between organic shapes
+- Linear gradient fill: magenta to pink vertical direction
+- Dual SVG structure prepared for glow/shadow effects
+
+🔧 Technical details:
+- viewBox="0 0 500 500" for scalable responsive design
+- <animate attributeName="d"> for path morphing
+- Loop completion: first and last values identical
+- Generated from blob-maker tool with custom coordinates
+
+💡 Future: Ready for CSS filter effects, blur, drop-shadow
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #230821;
+}
+
+.blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+.blob:nth-child(2) {
+    filter: blur(50px);
+}
