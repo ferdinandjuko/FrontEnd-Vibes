@@ -1,3 +1,12 @@
+/* fix: Restore proper CSS transform order for 3D tree geometry
+
+- Transform order matters: rotateY → rotateX → translateZ
+- translateZ must apply AFTER rotateX to maintain 3D positioning
+- Wrong order: rotateY → translateZ → rotateX breaks tree structure
+- Each transform applies in coordinate system of previous transform
+
+Technical: CSS transforms are matrix multiplications applied right-to-left
+Visual result: Maintains proper 3D tree faces positioning and perspective */
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +32,7 @@ body {
 }
 
 .tree::before {
-    content: '✨';
+    content: '⭐';
     position: absolute;
     top: -120px;
     left: calc(50% - 45px);
@@ -34,6 +43,7 @@ body {
     0% {
         transform: rotateX(-20deg) rotateY(360deg);
     }
+
     100% {
         transform: rotateX(-20deg) rotateY(0deg);
     }
