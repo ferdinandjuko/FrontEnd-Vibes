@@ -1,3 +1,13 @@
+/* feat: Set transform-origin for circular text positioning
+
+- transform-origin: 0 100px creates pivot point for character rotation
+- X: 0 = pivot at left edge of each character span
+- Y: 100px = pivot 100px below character (circle radius distance)
+- Combined with individual rotations, characters orbit around circle center
+
+Technical: Without custom transform-origin, characters would rotate around
+their own center instead of following circular path. 100px = circle radius.
+*/
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +37,7 @@ body {
     position: absolute;
     width: 150px;
     height: 150px;
-    background: url(img.png);
+    background: url(./img.png);
     background-size: cover;
     border-radius: 50%;
     filter: brightness(0.9) contrast(0.9);
@@ -44,6 +54,7 @@ body {
     0% {
         transform: rotate(360deg);
     }
+
     100% {
         transform: rotate(0deg);
     }
