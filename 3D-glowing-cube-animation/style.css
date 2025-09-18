@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswlad:wght@700&display=swap');
 
+/*  transform-style: preserve-3d; on .cube and .cube div and .cube div span; Second 02 black is not shadow but it is other h2 :first-child with his own style */
 * {
     margin: 0;
     padding: 0;
@@ -52,15 +53,16 @@ body {
     background: linear-gradient(#151515, #00ec00);
     /* 300 / 2 = 150 */
     transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
+    transform-style: preserve-3d;
 }
 
 .cube div span h2 {
     position: absolute;
     font-size: 10em;
-    color: white;
+    color: #fff;
     transform: translateZ(50px);
 }
 
