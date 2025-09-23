@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicator With Selector</title>
+    <!-- videoLink: https://youtu.be/xYNYGETrHJM -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Implement hover-controlled indicator with ~ selector -->
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li class="list active" style="--clr:#f53b57;" data-color="#f53b57">
+                <a href="#">
+                    <span class="icon"><ion-icon name="home"></ion-icon></span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#3c40c6;" data-color="#3c40c6">
+                <a href="#">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <span class="title">Profile</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#05c46b;" data-color="#05c46b">
+                <a href="#">
+                    <span class="icon"><ion-icon name="chatbubble"></ion-icon></span>
+                    <span class="title">Message</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#0fbcf9;" data-color="#0fbcf9">
+                <a href="#">
+                    <span class="icon"><ion-icon name="help-circle"></ion-icon></span>
+                    <span class="title">Help</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#ffa801;" data-color="#ffa801">
+                <a href="#">
+                    <span class="icon"><ion-icon name="settings"></ion-icon></span>
+                    <span class="title">Setting</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+    
+    <script type='module' defer src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
+    <script nomodule defer src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script>
+    <script src='script.js'></script>
+</body>
+</html>
