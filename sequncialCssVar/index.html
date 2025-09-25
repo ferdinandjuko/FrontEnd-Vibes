@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequencial Css Variables</title>
+    <!-- videoLink: https://youtu.be/28i0RVamsVE-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Implement automatic animation delays with --i variables -->
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Heroes</a>
+            <div onclick="toggleMenu()" class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="#" style="--i:1;">Home</a></li>
+                <li><a href="#" style="--i:2;">Character</a></li>
+                <li><a href="#" style="--i:3;">Movies</a></li>
+                <li><a href="#" style="--i:4;">Games</a></li>
+                <li><a href="#" style="--i:5;">More</a></li>
+            </ul>
+        </header>
+
+        <div class="container">
+            <div class="box" style="--i:3;">
+                <div class="imgBox">
+                    <img src="../image/img23.jpg">
+                </div>
+            </div>
+            <div class="box" style="--i:4;">
+                <div class="imgBox">
+                    <img src="../image/img24.jpg">
+                </div>
+            </div>
+            <div class="box" style="--i:5;">
+                <div class="imgBox">
+                    <img src="../image/img25.jpg">
+                </div>
+            </div>
+            <div class="box" style="--i:6;">
+                <div class="imgBox">
+                    <img src="../image/img26.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <ul class="sci">
+                <li><a href="#" style="--i:9">Facebook</a></li>
+                <li><a href="#" style="--i:8">Twitter</a></li>
+                <li><a href="#" style="--i:7">instagram</a></li>
+            </ul>
+            <p class="copyrightText">Copyright © F. Juko 2025</p>
+        </div>
+    </section>
+
+    <script src='script.js'></script>
+</body>
+</html>
