@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Invert White Icons</title>
+    <!-- videoLink: https://youtu.be/ZafzM_z9PLs -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Learn: filter invert() solves multi-theme resource problem Applied to contact form icons: 
+     - Dark background requires white icons - filter: invert(1) converts black→white instantly 
+     - Eliminates need for separate icon sets 
+     - Key insight: Mathematical color transformation > multiple assets -->
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="contactInfo">
+                <div>
+                    <h2>Get In Info</h2>
+                    <ul class="info">
+                       <li>
+                            <span><img src="../image/location.png"></span>
+                            <span>VS 52 Avaratr'Ankatso<br>
+                            Antananarivo, Madagascar<br>90017</span>
+                       </li>
+                       <li>
+                            <span><img src="../image/mail.png"></span>
+                            <span>rferdinandjuko@gmail.com</span>
+                       </li>
+                       <li>
+                            <span><img src="../image/call.png"></span>
+                            <span>+261 342 312 033</span>
+                       </li>
+                    </ul>
+                </div>
+
+                <ul class="sci">
+                    <li><a href="#"><img src="../image/icon1.png"></a></li>
+                    <li><a href="#"><img src="../image/icon2.png"></a></li>
+                    <li><a href="#"><img src="../image/icon3.png"></a></li>
+                    <li><a href="#"><img src="../image/icon4.png"></a></li>
+                    <li><a href="#"><img src="../image/icon5.png"></a></li>
+                </ul>
+            </div>
+
+            <div class="contactForm">
+                <h2>Send a Message</h2>
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="email" required>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Mobile Number</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea required></textarea>
+                        <span>Write your Message Here...</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit" value="Send">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
