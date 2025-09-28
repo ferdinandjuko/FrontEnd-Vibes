@@ -1,3 +1,10 @@
+/* Master transform-origin: CSS polar coordinate system
+
+Revolutionary circular positioning technique:
+- transform-origin: 100px sets pivot point from left edge
+- transform: rotate(calc(360deg / 8 * var(--i))) distributes elements
+- Mathematical formula auto-distributes any number of items
+- Essential pattern for radial interfaces and circular layouts */
 * {
     margin: 0;
     padding: 0;
@@ -63,7 +70,7 @@ body {
     z-index: 10000;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 3px 4px rgba(0, 0,0,0.15);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
     font-size: 2em;
     transition: transform 1.25s;
 }
