@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+/* Master SVG stroke progress: dasharray + dashoffset + calc()
+
+Revolutionary mathematical progress technique:
+- stroke-dasharray: 440 (circle circumference = 2×π×70)
+- stroke-dashoffset: calc(440 - (440 * var(--num)) / 100)
+- CSS calc auto-converts percentage to visible arc length
+- Essential pattern for data visualization and progress UI */
 * {
     margin: 0;
     padding: 0;
@@ -64,14 +72,17 @@ body {
     animation: fadeIn 1s linear forwards;
     animation-delay: 2.5s;
 }
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
     }
-    100% { 
+
+    100% {
         opacity: 1;
     }
 }
+
 .dot {
     position: absolute;
     /* background: #f00; */
@@ -86,13 +97,14 @@ body {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(calc(3.6deg * var(--num)));
     }
 }
 
 .dot::before {
-    content: ''; 
+    content: '';
     position: absolute;
     top: -5px;
     left: 50%;
@@ -102,7 +114,7 @@ body {
     background: var(--clr);
     border-radius: 50%;
     box-shadow: 0 0 10px var(--clr),
-    0 0 30px var(--clr);
+        0 0 30px var(--clr);
 }
 
 .number {
