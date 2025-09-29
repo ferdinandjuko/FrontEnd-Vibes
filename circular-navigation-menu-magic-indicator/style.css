@@ -1,3 +1,11 @@
+/*
+Master box-shadow as shape generator: spread-radius technique
+
+Revolutionary shadow-to-shape transformation:
+- box-shadow: 0 0 0 60px #fff creates solid circle at 60px radius
+- Multiple shadows = concentric rings without HTML elements
+- Formula: offset-x=0, offset-y=0, blur=0, spread=[radius]
+- Essential pattern for effects without DOM bloat */
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +47,7 @@ body {
 .menu .toggle.active {
     transform: rotate(315deg);
     box-shadow: 0 0 0 60px #fff,
-    0 0 0 68px #fff;
+        0 0 0 68px #fff;
     background: #222237;
     color: #fff;
 }
@@ -48,8 +56,7 @@ body {
     position: absolute;
     left: 10px;
     list-style: none;
-    transform: rotate(calc(360deg / 8 * var(--i)))
-    translateX(40px);
+    transform: rotate(calc(360deg / 8 * var(--i))) translateX(40px);
     transform-origin: 140px;
     visibility: hidden;
     opacity: 0;
@@ -68,15 +75,14 @@ body {
     align-items: center;
     width: 55px;
     height: 55px;
-    font-size: 1.75em; 
+    font-size: 1.75em;
     color: #222237;
     transform: rotate(calc(360deg / -8 * var(--i)));
     border-radius: 50%;
 }
 
 .menu.active li.active {
-    transform: rotate(calc(360deg / 8 * var(--i)))
-    translateX(12px);
+    transform: rotate(calc(360deg / 8 * var(--i))) translateX(12px);
 }
 
 .indicator {
@@ -111,27 +117,35 @@ body {
     background: #29fd53;
     box-shadow: 0 0 0 6px #222237;
 }
-.menu li:nth-child(2).active ~ .indicator {
-   transform: translateX(-103px) rotate(0deg);
+
+.menu li:nth-child(2).active~.indicator {
+    transform: translateX(-103px) rotate(0deg);
 }
-.menu li:nth-child(3).active ~ .indicator {
-   transform: translateX(-103px) rotate(45deg);
+
+.menu li:nth-child(3).active~.indicator {
+    transform: translateX(-103px) rotate(45deg);
 }
-.menu li:nth-child(4).active ~ .indicator {
+
+.menu li:nth-child(4).active~.indicator {
     transform: translateX(-103px) rotate(90deg);
 }
-.menu li:nth-child(5).active ~ .indicator {
+
+.menu li:nth-child(5).active~.indicator {
     transform: translateX(-103px) rotate(135deg);
 }
-.menu li:nth-child(6).active ~ .indicator {
+
+.menu li:nth-child(6).active~.indicator {
     transform: translateX(-103px) rotate(180deg);
 }
-.menu li:nth-child(7).active ~ .indicator {
+
+.menu li:nth-child(7).active~.indicator {
     transform: translateX(-103px) rotate(225deg);
 }
-.menu li:nth-child(8).active ~ .indicator {
+
+.menu li:nth-child(8).active~.indicator {
     transform: translateX(-103px) rotate(270deg);
 }
-.menu li:nth-child(9).active ~ .indicator {
+
+.menu li:nth-child(9).active~.indicator {
     transform: translateX(-103px) rotate(315deg);
 }
