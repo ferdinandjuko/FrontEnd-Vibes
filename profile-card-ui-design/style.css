@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+/*
+Master content reveal: translateY + overflow: hidden combination
+
+- overflow: hidden on container masks out-of-bounds content
+- translateY(150px) positions content below visible area
+- Hover triggers: card height expansion + content translateY(0)
+- Essential pattern: masking container + transform movement */
 * {
     margin: 0;
     padding: 0;
@@ -51,6 +59,7 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
 .card .content {
     position: absolute;
     width: 100%;
@@ -86,7 +95,7 @@ body {
     opacity: .5;
 }
 
-.card .content  .details .data {
+.card .content .details .data {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
