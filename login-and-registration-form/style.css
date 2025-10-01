@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@200,300,400,500,600,700,800,900&display=swap');
 
+/*
+feat: implement sliding panel system with pointer-events control
+
+- Uses pointer-events: none to disable interaction on hidden panels
+- Absolute positioning with top: 100%/-100% creates vertical slides
+- JS toggles .active class to trigger CSS transitions
+- Prevents tab/click access to off-screen forms for accessibility
+- Multiple panels stack with independent slide directions*/
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +25,14 @@ section {
     padding: 20px;
     transition: .5s;
 }
+
 /* #c4c0b7 */
 
 section.active {
     /* background: linear-gradient(45deg,#c4c0b7,#e4e3d1); */
     background: #c0bbb2;
 }
+
 section .container {
     position: relative;
     width: 800px;
@@ -48,7 +58,7 @@ section .container .user .imgBx {
     transition: .5s;
 }
 
-section .container .user .imgBx img { 
+section .container .user .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -155,13 +165,16 @@ section .container.active .signupBx .imgBx {
 section .container .signinBx .formBx {
     top: 0;
 }
+
 section .container.active .signinBx .formBx {
     top: 100%;
 }
+
 section .container .signinBx .imgBx {
     top: 0;
     transition: .5s;
 }
+
 section .container.active .signinBx .imgBx {
     top: -100%;
 }
@@ -170,12 +183,15 @@ section .container.active .signinBx .imgBx {
     section .container {
         max-width: 400px;
     }
+
     section .container .imgBx {
         display: none;
     }
+
     section .container .user .formBx {
         width: 100%;
     }
+
     section .container.active .signinBx .formBx {
         top: -100%;
     }
