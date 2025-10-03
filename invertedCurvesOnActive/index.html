@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inverted Curves for Navigation Active Indicator</title>
+    <!-- videoLink: https://youtu.be/EukILNaHbDM -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Implement negative border-radius using transparent pseudo-elements + box-shadow and inverted curves for navigation active indicator -->
+</head>
+<body>
+    <ul>
+        <li><a href="#"><ion-icon name="home"></ion-icon><text>Home</text></a></li>
+        <li><a href="#"><ion-icon name="person"></ion-icon><text>Account</text></a></li>
+        <li class="active"><a href="#"><ion-icon name="add-circle"></ion-icon><text>Create</text></a></li>
+        <li><a href="#"><ion-icon name="settings"></ion-icon><text>Settings</text></a></li>
+        <li><a href="#"><ion-icon name="chatbubble"></ion-icon><text>Chat</text></a></li>
+        <div id="marker"><span></span></div>
+    </ul>
+
+    <script type='module' defer src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
+    <script nomodule defer src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script>
+    <script src='script.js'></script>
+</body>
+</html>
