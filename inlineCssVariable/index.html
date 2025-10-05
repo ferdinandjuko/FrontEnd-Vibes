@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline CSS Variables</title>
+    <!-- videoLink: https://youtu.be/tthIRPzN61Y -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Implement inline CSS variables for dynamic content injection and scalable slider with --img HTML variables -->
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="slides" style="--img: url('../image/pepsi.jpg');">
+                <div class="content">
+                    <h2>Slide 01</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos eum voluptatibus natus placeat excepturi et.</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('../image/game.jpg');">
+                <div class="content">
+                    <h2>Slide 02</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos eum voluptatibus natus placeat excepturi et.</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('../image/img20.jpg');">
+                <div class="content">
+                    <h2>Slide 03</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos eum voluptatibus natus placeat excepturi et.</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('../image/img24.jpg');">
+                <div class="content">
+                    <h2>Slide 04</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos eum voluptatibus natus placeat excepturi et.</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('../image/img21.jpg');">
+                <div class="content">
+                    <h2>Slide 05</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos eum voluptatibus natus placeat excepturi et.</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('../image/img22.jpg');">
+                <div class="content">
+                    <h2>Slide 06</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos eum voluptatibus natus placeat excepturi et.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <span class="prev"></span>
+        <span class="next"></span>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+</html>
