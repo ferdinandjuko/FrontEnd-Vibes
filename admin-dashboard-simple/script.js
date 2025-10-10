@@ -1,20 +1,29 @@
+/*
+Implement box-shadow curve hack for concave navigation
+ Create iOS-style sidebar with concave curves using CSS hack
+- Position transparent circular pseudo-elements outside bounds
+- Apply offset box-shadow to fill space (35px 35px 0 10px)
+- ::before for top curve (shadow down-right)
+- ::after for bottom curve (shadow up-right with -35px Y)
+- Pure CSS solution, no SVG needed
+*/
 // MenuToggle
 let toggle = document.querySelector('.toggle');
 let navigation = document.querySelector('.navigation');
 let main = document.querySelector('.main');
 
-    toggle.onclick = function() {
-        navigation.classList.toggle('active');
-        main.classList.toggle('active')
-    }
+toggle.onclick = function () {
+    navigation.classList.toggle('active');
+    main.classList.toggle('active')
+}
 
 
 // add hovvered class to the navigation list item
 let list = document.querySelectorAll('.navigation li')
 function activeLink() {
-    list.forEach((item) => 
+    list.forEach((item) =>
         item.classList.remove('hovered'));
-        this.classList.add('hovered')
+    this.classList.add('hovered')
 }
 
 list.forEach((item) =>
@@ -34,7 +43,7 @@ var yChart = new Chart(ctx, {
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 206, 86, 1)'
             ],
-            
+
         }]
     },
     options: {

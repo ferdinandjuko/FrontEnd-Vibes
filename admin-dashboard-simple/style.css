@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:wght@300;400;500;700&display=swap');
 
+/*
+Implement box-shadow curve hack for concave navigation
+Create iOS-style sidebar with concave curves using CSS hack
+- Position transparent circular pseudo-elements outside bounds
+- Apply offset box-shadow to fill space (35px 35px 0 10px)
+- ::before for top curve (shadow down-right)
+- ::after for bottom curve (shadow up-right with -35px Y)
+- Pure CSS solution, no SVG needed */
 * {
     margin: 0;
     padding: 0;
@@ -19,10 +27,12 @@ body {
     min-height: 100vh;
     /* overflow: hidden; */
 }
+
 .container {
     position: relative;
     width: 100%;
 }
+
 .navigation {
     position: fixed;
     width: 300px;
@@ -52,8 +62,7 @@ body {
 }
 
 .navigation ul li:hover,
-.navigation ul li.hovered
-{
+.navigation ul li.hovered {
     background: var(--white);
 }
 
@@ -72,8 +81,7 @@ body {
 }
 
 .navigation ul li:hover a,
-.navigation ul li.hovered a 
-{
+.navigation ul li.hovered a {
     color: var(--blue);
 }
 
@@ -101,9 +109,8 @@ body {
 }
 
 /* curve outside */
-.navigation ul li:hover a::before, 
-.navigation ul li.hovered a::before 
-{
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before {
     content: '';
     position: absolute;
     right: 0;
@@ -115,9 +122,9 @@ body {
     box-shadow: 35px 35px 0 10px var(--white);
     pointer-events: none;
 }
-.navigation ul li:hover a::after, 
-.navigation ul li.hovered a::after 
-{
+
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after {
     content: '';
     position: absolute;
     right: 0;
@@ -142,7 +149,7 @@ body {
 
 .main.active {
     width: calc(100% - 80px);
-    left: 80px; 
+    left: 80px;
 }
 
 .topbar {
@@ -219,14 +226,14 @@ body {
     padding: 20px;
     display: grid;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
 }
 
 .cardBox .card {
     position: relative;
     background: var(--white);
-    padding: 30px; 
+    padding: 30px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
@@ -255,9 +262,10 @@ body {
 .cardBox .card:hover {
     background: var(--blue);
 }
+
 .cardBox .card:hover .numbers,
 .cardBox .card:hover .cardName,
-.cardBox .card:hover .iconBx{
+.cardBox .card:hover .iconBx {
     color: var(--white);
 }
 
@@ -458,28 +466,35 @@ body {
     .navigation {
         left: -300px;
     }
+
     .navigation.active {
         width: 400px;
         left: 0;
     }
+
     .main {
         width: 100%;
         left: 0;
     }
+
     .main.active {
         left: 300px;
     }
+
     .graphBox {
         grid-template-columns: 1fr;
         height: auto;
     }
+
     .recentOrders table {
         /* margin-top: -233px; */
         margin-top: -251px;
     }
+
     .cardBox {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
+
     /* .details {
         grid-template-columns: repeat(1,1fr);
     } */
@@ -487,14 +502,17 @@ body {
 
 @media (max-width: 768px) {
     .details {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .recentCustomers {
         overflow-x: auto;
     }
+
     .status.inprogress {
         white-space: nowrap;
     }
+
     .recentOrders table {
         margin-top: 0;
     }
@@ -503,28 +521,34 @@ body {
 
 @media (max-width: 480px) {
     .cardBox {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .cardHeader h2 {
         font-size: 20px;
     }
+
     .user {
         min-width: 40px;
     }
+
     .navigation {
         width: 100%;
         left: -100%;
         z-index: 1000;
     }
+
     .navigation.active {
         width: 100%;
         left: 0;
 
     }
+
     .toggle {
         z-index: 10001;
 
     }
+
     .main.active .toggle {
         position: fixed;
         right: 0;
