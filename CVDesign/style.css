@@ -120,3 +120,24 @@ body {
     margin-right: 10px;
     color: #3590d2;
 }
+
+.container .contentBox ul.education li {
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+h5 {
+    color: #3590d2;
+}
+
+h4 {
+    color: #333;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+h6 {
+    color: #666;
+    font-weight: 300;
+    font-size: 1em;
+}
