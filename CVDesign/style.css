@@ -170,3 +170,33 @@ h6 {
     height: 100%;
     background: #3590d2;
 }
+
+.container .contentBox ul.interest {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container .contentBox ul.interest li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.container .contentBox ul.interest li .icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #3590d2;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .contentBox ul.interest li .icon ion-icon {
+    color: #fff;
+    margin-right: 0;
+}
