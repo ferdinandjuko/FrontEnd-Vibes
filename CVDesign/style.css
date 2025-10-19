@@ -234,3 +234,33 @@ p {
     font-size: 0.8em;
     margin: 0;
 }
+
+.about.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.about.skills .box h4 {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.about.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #e3e3e3;
+}
+
+.about.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #3590d2;
+}
