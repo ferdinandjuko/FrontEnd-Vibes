@@ -200,3 +200,37 @@ h6 {
     color: #fff;
     margin-right: 0;
 }
+
+p {
+    font-style: 300;
+}
+
+.rightSide {
+    padding-left: 40px;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .yearCompany {
+    min-width: 150px;
+    margin-bottom: 10px;
+}
+
+.about .box .yearCompany h5 {
+    color: #333;
+    font-weight: 600;
+}
+
+.about .box .yearCompany h5:nth-child(1) {
+    color: #3590d2;
+}
+
+.about .box .text h4 {
+    color: #3590d2;
+    font-size: 0.8em;
+    margin: 0;
+}
