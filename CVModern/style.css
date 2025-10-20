@@ -155,3 +155,27 @@ h4 {
 .adjsMargin {
     margin-top: -10px;
 }
+
+.eduGroup {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.eduGroupBox {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.eduGroupBox p:nth-child(1) {
+    font-weight: 500;
+}
+
+.eduGroupBox b {
+    font-weight: 600;
+    color: #231fbf;
+}
