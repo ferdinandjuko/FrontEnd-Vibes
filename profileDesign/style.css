@@ -107,3 +107,23 @@ body {
     border-radius: 50%;
     border: 10px solid var(--clr);
 }
+
+.card .box .imgBox,
+.card .circle .imgBox {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.card .box .imgBox {
+    border-radius: 15px;
+}
+
+.card .circle .imgBox img,
+.card .box .imgBox video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
