@@ -15,3 +15,39 @@ body {
     min-height: 100vh;
     background: #000815;
 }
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    flex-wrap: wrap;
+}
+
+.container .box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 320px;
+    background: var(--clr);
+    box-shadow: 0 0 0 15px #000,
+        0 25px 55px var(--clr);
+}
+
+.container .box h2 {
+    position: relative;
+    color: #020d1e;
+    font-size: 4em;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+.container .box h2 small {
+    font-size: 0.35em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
