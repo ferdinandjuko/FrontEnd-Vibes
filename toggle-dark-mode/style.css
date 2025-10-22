@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
+/*
+added CSS variables for theme system (dark/light mode)
+add mix-blend-mode screen/multiply for video mask
+Adaptive texture with invert filter for dark mode */
 * {
     margin: 0;
     padding: 0;
