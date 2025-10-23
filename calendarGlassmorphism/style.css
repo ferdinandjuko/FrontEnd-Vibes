@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-/*  */
+/* 
+- Use backdrop-filter: blur(25px) for glass effect - Apply rgba(255,255,255,0.1) semi-transparent background
+- Add differentiated borders (top-left 50%, bottom-right 20%) - Include soft shadow for depth */
 * {
     margin: 0;
     padding: 0;
@@ -81,4 +83,49 @@ section::after {
 #dycalendar table td {
     color: #fff;
     padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#dycalendar table td:hover {
+    background: #fff;
+    color: #111 !important;
+}
+
+.dycalendar-month-container .dycalendar-today-date,
+.dycalendar-month-container .dycalendar-target-date {
+    background: #fff;
+    color: #111 !important;
+}
+
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.prev-btn {
+    background: #fff;
+    color: #111;
+    width: 44px;
+    height: 38px;
+    left: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.next-btn {
+    background: #fff;
+    color: #111;
+    width: 44px;
+    height: 38px;
+    right: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+.dycalendar-month-container .dycalendar-span-month-year {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
 }
