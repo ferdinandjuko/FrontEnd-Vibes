@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Bad+Script:wght@500&display=swap");
 
+/*
+Create sequential effect with custom properties:- animation-delay: calc(var(--i) * 0.1s) - Each letter animates with 0.1s offset - 8-layer text-shadow for neon glow
+*/
 * {
     padding: 0;
     margin: 0;
