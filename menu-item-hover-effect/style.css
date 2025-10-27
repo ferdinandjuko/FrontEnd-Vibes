@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+/*
+Formula: content: attr(attribute-name); Only works in: content property (::before/::after); Perfect for: tooltips, badges, dynamic text, labels */
 * {
     margin: 0;
     padding: 0;
