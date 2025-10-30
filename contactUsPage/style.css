@@ -20,7 +20,6 @@
 }
 
 .contact .content {
-    min-width: 800px;
     text-align: center;
 }
 
@@ -160,4 +159,45 @@
     font-size: 1.1em;
     color: #666;
     transition: 0.5s;
+}
+
+
+.container .contactForm .inputBox input:focus~span,
+.container .contactForm .inputBox textarea:focus~span,
+.container .contactForm .inputBox input:valid~span,
+.container .contactForm .inputBox textarea:valid~span {
+    color: #e91e63;
+    font-size: 0.9em;
+    transform: translateY(-20px);
+}
+
+.container .contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+/* let's make it responsive */
+@media (max-width: 991px) {
+    .contact {
+        padding: 50px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .contactInfo,
+    .container .contactForm {
+        width: 100%;
+    }
+
+    .container .contactForm {
+        padding: 50px 30px;
+    }
 }
