@@ -75,6 +75,50 @@
     color: #fff;
 }
 
+.container .contactInfo .box .text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.container .contactInfo .txt {
+    color: #fff;
+    margin-top: 50px;
+    font-weight: 500;
+    padding-left: 10px;
+    border-left: 50px solid #e91d63;
+    line-height: 1em;
+}
+
+.sci {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    color: #fff;
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+.sci li a:hover {
+    color: #00bcd4;
+}
+
 .container .contactForm {
     position: relative;
     width: 40%;
