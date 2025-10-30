@@ -49,13 +49,35 @@
 .container .contactInfo {
     width: 50%;
     display: flex;
-    background: #fff1;
-    min-height: 500px;
+    flex-direction: column;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    cursor: pointer;
+}
+
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75em;
+    transition: 0.5s;
+}
+
+.container .contactInfo .box:hover .icon {
+    background: #00bcd4;
+    color: #fff;
 }
 
 .container .contactForm {
     position: relative;
     width: 40%;
     background: #fff;
-    min-height: 500px;
+    min-height: 100px;
 }
