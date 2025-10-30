@@ -124,4 +124,40 @@
     width: 40%;
     background: #fff;
     min-height: 100px;
+    padding: 60px;
+}
+
+.container .contactForm h2 {
+    font-size: 2em;
+    color: #333;
+    font-weight: 500;
+}
+
+.container .contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container .contactForm .inputBox input,
+.container .contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-style: 1.1em;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.container .contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #666;
+    transition: 0.5s;
 }
