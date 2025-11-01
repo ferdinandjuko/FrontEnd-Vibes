@@ -71,4 +71,22 @@ body {
         0 0 0 300px var(--clr);
 }
 
-.container .box .content .text {}
+.container .box .content .text {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+}
+
+.container .box:hover .content .text h3 {
+    color: #2e2e2e;
+}
+
+.container .box .content .text p {
+    color: #777;
+    transition: 0.5s ease-in-out;
+}
+
+.container .box:hover .content .text p {
+    color: #2e2e2e;
+}
