@@ -42,7 +42,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    background: #f00;
     margin-top: 30px;
 }
 
@@ -61,4 +60,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.container .contactInfo .box .icon::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from 117.5deg, #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50%);
+}
+
+.container .contactInfo .box .icon::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #222;
 }
