@@ -35,3 +35,13 @@ body {
     font-size: 1.1em;
     font-weight: 300;
 }
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background: #f00;
+    margin-top: 30px;
+}
