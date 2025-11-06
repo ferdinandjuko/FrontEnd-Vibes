@@ -45,3 +45,20 @@ body {
     background: #f00;
     margin-top: 30px;
 }
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    cursor: pointer;
+}
+
+.container .contactInfo .box .icon {
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    background: repeating-conic-gradient(from 27.5deg, #01dbc2, #01dbc2 10%, transparent 10%, transparent 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
