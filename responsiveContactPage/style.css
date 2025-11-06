@@ -76,3 +76,21 @@ body {
     inset: 2px;
     background: #222;
 }
+
+.container .contactInfo .box .icon b {
+    position: absolute;
+    inset: 8px;
+    background: #01dbc2;
+    z-index: 2;
+}
+
+.container .contactInfo .box .icon ion-icon {
+    position: relative;
+    z-index: 1000;
+    color: #333;
+    font-size: 1.25em;
+}
+
+.container .contactInfo .box .text {
+    position: relative;
+}
