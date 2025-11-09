@@ -229,3 +229,14 @@ body {
     font-size: 0.9em;
     transform: translateY(-24px);
 }
+
+.container .contactForm form .inputBox input[type="submit"] {
+    width: 100%;
+    background: #01dbc2;
+    color: #222;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
