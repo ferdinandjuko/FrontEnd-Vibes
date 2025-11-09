@@ -209,3 +209,23 @@ body {
     outline: none;
     resize: none;
 }
+
+.container .contactForm form .inputBox span {
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.container .contactForm form .inputBox input:focus~span,
+.container .contactForm form .inputBox textarea:focus~span,
+.container .contactForm form .inputBox input:valid~span,
+.container .contactForm form .inputBox textarea:valid~span {
+    color: #01dbc2;
+    font-size: 0.9em;
+    transform: translateY(-24px);
+}
