@@ -32,6 +32,12 @@ section::before {
     box-shadow: 0 0 20px #1de5ff,
         0 0 50px #1de5ff,
         0 0 150px #1de5ff;
+    transition: 0.5s;
+}
+
+section.active::before {
+    background: #21283a;
+    box-shadow: 0 0 0 1200px #141821;
 }
 
 header {
@@ -47,7 +53,7 @@ header {
 }
 
 header .logo {
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: #fff;
     letter-spacing: 1px;
     font-weight: 600;
@@ -62,13 +68,20 @@ header .logo span {
 
 header .toggle {
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background: url(../image/menu1.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 30px;
+    background-size: 25px;
     cursor: pointer;
+}
+
+header .toggle.active {
+    background: url(../image/close1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
 }
 
 .girl {
