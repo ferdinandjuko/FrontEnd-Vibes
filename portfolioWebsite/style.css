@@ -91,3 +91,69 @@ header .toggle.active {
     height: 450px;
     width: 400px;
 }
+
+.content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.content .contentBox {
+    position: relative;
+    max-width: 600px;
+    z-index: 100;
+}
+
+.content .contentBox h4 {
+    font-weight: 400;
+    color: #1de5ff;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.content .contentBox h2 {
+    font-size: 4em;
+    line-height: 1em;
+    color: #fff;
+}
+
+.content .contentBox h3 {
+    font-weight: 300;
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.content .contentBox p {
+    font-size: 1em;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.content .contentBox a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #1de5ff;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.content .contentBox a:last-child {
+    background: #1de5ff;
+    color: #111;
+}
+
+.content .contentBox a:hover {
+    box-shadow: 0 0 15px #1de5ff,
+        0 0 40px #1de5ff;
+}
