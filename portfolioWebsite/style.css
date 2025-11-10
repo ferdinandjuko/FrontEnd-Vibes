@@ -19,6 +19,21 @@ section {
     overflow: hidden;
 }
 
+section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    width: 350px;
+    height: 350px;
+    background: #1de5ff;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #1de5ff,
+        0 0 50px #1de5ff,
+        0 0 150px #1de5ff;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -54,4 +69,12 @@ header .toggle {
     background-position: center;
     background-size: 30px;
     cursor: pointer;
+}
+
+.girl {
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    height: 450px;
+    width: 400px;
 }
