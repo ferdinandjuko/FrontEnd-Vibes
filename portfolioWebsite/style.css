@@ -280,4 +280,19 @@ section.active .menu {
     .content .contentBox h3 {
         font-size: 1.1em;
     }
+
+    section .menu {
+        padding-left: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: scale(0);
+        transition: 0.5s;
+    }
+
+    section.active .menu {
+        transform: scale(1);
+    }
 }
