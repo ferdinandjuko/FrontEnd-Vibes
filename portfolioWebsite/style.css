@@ -32,7 +32,7 @@ section::before {
     box-shadow: 0 0 20px #1de5ff,
         0 0 50px #1de5ff,
         0 0 150px #1de5ff;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 section.active::before {
@@ -59,6 +59,8 @@ header .logo {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
+    transition: 0.5s;
+    transform-origin: left;
 }
 
 header .logo span {
@@ -198,4 +200,32 @@ header .toggle.active {
 
 .sci li:hover a img {
     filter: invert(0);
+}
+
+section.active .logo,
+section.active .content,
+section.active .sci {
+    transform: scale(0);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 2;
+    padding-left: 100px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+section.active .menu {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
 }
