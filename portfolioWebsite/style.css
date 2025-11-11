@@ -268,4 +268,16 @@ section.active .menu {
         right: -100px;
         opacity: 0.3;
     }
+
+    .content .contentBox a {
+        margin-bottom: 10px;
+    }
+
+    .content .contentBox h2 {
+        font-size: 1.5em;
+    }
+
+    .content .contentBox h3 {
+        font-size: 1.1em;
+    }
 }
