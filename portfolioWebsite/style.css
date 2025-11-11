@@ -222,6 +222,7 @@ section.active .sci {
     padding-left: 100px;
     opacity: 0;
     visibility: hidden;
+    transition: 0.5s;
 }
 
 section.active .menu {
@@ -247,4 +248,15 @@ section.active .menu {
     letter-spacing: 6px;
     background: #fff;
     color: #161a23;
+}
+
+/* now, make it responsive */
+@media (max-width: 991px) {
+    section {
+        padding: 40px;
+    }
+
+    header {
+        padding: 20px 40px;
+    }
 }
