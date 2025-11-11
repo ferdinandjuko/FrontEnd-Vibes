@@ -229,3 +229,22 @@ section.active .menu {
     visibility: visible;
     transition-delay: 0.5s;
 }
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    transition: 0.25s;
+}
+
+.menu li:hover a {
+    letter-spacing: 6px;
+    background: #fff;
+    color: #161a23;
+}
