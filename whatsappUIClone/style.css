@@ -28,4 +28,50 @@ header {
     position: relative;
     background: #008069;
     padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+header .action {
+    position: relative;
+    display: flex;
+    gap: 15px;
+}
+
+header .action a {
+    color: #fff;
+    display: flex;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.tabs {
+    display: none;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    background: #008069;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.buttons label {
+    width: 33.33%;
+    color: #fff;
+    opacity: 0.75;
+    text-align: center;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9em;
+    cursor: pointer;
 }
