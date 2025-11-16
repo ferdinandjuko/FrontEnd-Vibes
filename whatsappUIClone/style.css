@@ -202,3 +202,13 @@ header .action a {
     justify-content: space-between;
     align-items: center;
 }
+
+.chatlist .block .details p {
+    color: #555;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    font-size: .9em;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
