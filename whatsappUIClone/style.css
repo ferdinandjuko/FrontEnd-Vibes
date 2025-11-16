@@ -212,3 +212,12 @@ header .action a {
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
 }
+
+.chatlist .block.unread .details .listHead .time {
+    color: #06d755;
+}
+
+.chatlist .block.unread .details p {
+    color: #111;
+    font-weight: 600;
+}
