@@ -184,3 +184,10 @@ header .action a {
     display: flex;
     justify-content: space-between;
 }
+
+.chatlist .block .details .listHead h4 {
+    font-size: 1em;
+    font-weight: 600;
+    width: 100%;
+    color: #111;
+}
