@@ -191,3 +191,14 @@ header .action a {
     width: 100%;
     color: #111;
 }
+
+.chatlist .block .details .listHead .time {
+    font-size: .75em;
+    color: #555;
+}
+
+.message_p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
