@@ -233,3 +233,15 @@ header .action a {
     align-items: center;
     font-size: .75em;
 }
+
+::-webkit-scroolbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bbb;
+}
