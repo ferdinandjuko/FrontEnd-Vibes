@@ -274,3 +274,8 @@ header .action a {
     box-shadow: 0 0 0 #fff,
         0 0 0 4px #008069;
 }
+
+.seen .imgBox {
+    box-shadow: 0 0 2px #fff,
+        0 0 0 4px #bbb;
+}
