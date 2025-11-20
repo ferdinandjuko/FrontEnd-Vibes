@@ -262,3 +262,15 @@ header .action a {
     font-size: 1.2em;
     font-weight: 700;
 }
+
+.box label {
+    padding: 0 15px;
+    font-weight: 600;
+    color: #5555;
+    font-size: 0.85em;
+}
+
+.unseen .imgBox {
+    box-shadow: 0 0 0 #fff,
+        0 0 0 4px #008069;
+}
