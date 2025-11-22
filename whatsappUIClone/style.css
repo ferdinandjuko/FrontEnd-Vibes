@@ -271,12 +271,12 @@ header .action a {
 }
 
 .unseen .imgBox {
-    box-shadow: 0 0 0 #fff,
+    box-shadow: 0 0 0 2px #fff,
         0 0 0 4px #008069;
 }
 
 .seen .imgBox {
-    box-shadow: 0 0 2px #fff,
+    box-shadow: 0 0 0 2px #fff,
         0 0 0 4px #bbb;
 }
 
@@ -288,4 +288,19 @@ header .action a {
     color: #fff;
     font-size: 1.5em;
     rotate: -45deg;
+}
+
+.incoming ion-icon {
+    color: #0f0;
+    rotate: 45deg;
+}
+
+.outgoing ion-icon {
+    color: #f00;
+    rotate: 45deg;
+}
+
+.call {
+    font-size: 1.5em;
+    color: #008069;
 }
