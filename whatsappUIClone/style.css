@@ -373,3 +373,13 @@ header .action a {
     background: url(../image/pattern.png);
     opacity: 0.05;
 }
+
+.chatHeader {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #008069;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
