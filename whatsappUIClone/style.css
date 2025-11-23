@@ -304,3 +304,26 @@ header .action a {
     font-size: 1.5em;
     color: #008069;
 }
+
+.quickBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10000;
+}
+
+.quickBtn .btn {
+    background: #008069;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.35em;
+    cursor: pointer;
+    /* display: none; */
+}
+
+.tabs input:nth-child
