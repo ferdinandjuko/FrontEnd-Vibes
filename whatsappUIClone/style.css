@@ -323,7 +323,31 @@ header .action a {
     color: #fff;
     font-size: 1.35em;
     cursor: pointer;
-    /* display: none; */
+    display: none;
 }
 
-.tabs input:nth-child
+.tabs input:nth-child(1):checked~.quickBtn .btn:nth-child(1) {
+    display: flex;
+}
+
+.tabs input:nth-child(2):checked~.quickBtn .btn:nth-child(2) {
+    display: flex;
+}
+
+.tabs input:nth-child(3):checked~.quickBtn .btn:nth-child(3) {
+    display: flex;
+}
+
+.quickBtn .btn .pencil {
+    position: absolute;
+    top: -50px;
+    width: 40px;
+    height: 40px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    border-radius: 50%;
+    font-size: 0.75em;
+}
