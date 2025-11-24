@@ -467,3 +467,25 @@ ion-icon {
     text-align: end;
     color: #777;
 }
+
+.messageInput {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.messageInput .input {
+    position: relative;
+    background: #fff;
+    padding: 5px 10px;
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+}
