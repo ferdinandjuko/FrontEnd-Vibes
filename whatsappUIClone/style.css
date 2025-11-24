@@ -435,3 +435,17 @@ ion-icon {
     color: #fff;
     gap: 15px;
 }
+
+.messageBox {
+    position: relative;
+    padding: 20px;
+    height: 500px;
+}
+
+.messageBox .message {
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    border-top-left-radius: 1px solid;
+}
