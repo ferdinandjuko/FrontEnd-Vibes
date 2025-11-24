@@ -515,3 +515,7 @@ ion-icon {
     border-radius: 50%;
     cursor: pointer;
 }
+
+.deg45 {
+    rotate: 45deg;
+}
