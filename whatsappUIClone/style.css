@@ -447,5 +447,23 @@ ion-icon {
     padding: 10px;
     background: #fff;
     border-radius: 10px;
-    border-top-left-radius: 1px solid;
+    border-top-left-radius: 0;
+}
+
+.messageBox .message::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    border: 10px solid transparent;
+    border-top: 1px solid #fff;
+}
+
+.time {
+    position: relative;
+    display: block;
+    font-size: 0.7em;
+    width: 100%;
+    text-align: end;
+    color: #777;
 }
