@@ -26,3 +26,20 @@ body {
     cursor: pointer;
     user-select: none;
 }
+
+.container::before {
+    content: '';
+    position: absolute;
+    inset: 15px;
+    border-radius: 50%;
+    background: #222;
+    opacity: 0.9;
+}
+
+.download {
+    position: absolute;
+    top: 50%;
+    color: #03a9f5;
+    font-size: 4em;
+    transition: 0.5s;
+}
