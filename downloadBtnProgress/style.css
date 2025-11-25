@@ -28,6 +28,10 @@ body {
     overflow: hidden;
 }
 
+.container.done {
+    background: #0f0 !important;
+}
+
 .container::before {
     content: '';
     position: absolute;
@@ -43,6 +47,26 @@ body {
     z-index: 100;
     font-size: 3em;
     text-align: center;
+}
+
+.container #number span {
+    font-size: 0.5em;
+}
+
+.container.done #number {
+    font-size: 5em;
+    line-height: 1em;
+}
+
+.container.done #number small {
+    position: absolute;
+    top: 10px;
+    font-size: 0.2em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    transform: translate(-50%, 50%);
 }
 
 .download {
