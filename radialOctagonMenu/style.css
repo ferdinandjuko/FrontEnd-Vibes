@@ -66,6 +66,8 @@ body {
     border-radius: 2px;
     background: var(--clr);
     transform: rotate(calc(var(--i) * 90deg)) translate(0, 25px);
+    transition: height 0.5s, width 0.5s, transform 0.5s;
+    transition-delay: 0s, 0s, 0s;
 }
 
 .menu.active li a::before {
@@ -74,6 +76,17 @@ body {
     border: 2px solid var(--clr);
     box-sizing: border-box;
     background: #2f363e;
+    transform: rotate(calc(var(--i) * 90deg)) translate(0px, 0px);
+    transition: transform 0.5s, height 0.5s, width 0.5s;
+    transition-delay: 1s, 1.5s, 1.5s;
+}
+
+.menu.active li:hover a::before {
+    background: var(--clr);
+    color: #2f363e;
+    box-shadow: 0 0 10px var(--clr),
+        0 0 30px var(--clr),
+        0 0 50px var(--clr);
 }
 
 .toggle {
