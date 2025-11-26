@@ -54,6 +54,28 @@ body {
     transition-delay: 0.5s;
 }
 
+.menu.active li a {
+    color: var(--clr);
+}
+
+.menu li a::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--clr);
+    transform: rotate(calc(var(--i) * 90deg)) translate(0, 25px);
+}
+
+.menu.active li a::before {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--clr);
+    box-sizing: border-box;
+    background: #2f363e;
+}
+
 .toggle {
     position: absolute;
     width: 60px;
