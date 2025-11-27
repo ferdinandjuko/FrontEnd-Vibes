@@ -64,3 +64,30 @@ body {
     -webkit-text-stroke: 0px #222;
     transform: translateY(-200%);
 }
+
+.tab li a:hover i {
+    transform: translateY(100%);
+}
+
+.tab li a:hover i:last-child {
+    transform: translateY(-100%);
+}
+
+.tab li a .text {
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.tab li a .text span {
+    display: block;
+    position: relative;
+    color: #222;
+    font-size: 1em;
+    line-height: 20px;
+    transition: 0.5s;
+}
