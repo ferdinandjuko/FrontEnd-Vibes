@@ -91,3 +91,24 @@ body {
     line-height: 20px;
     transition: 0.5s;
 }
+
+.tab li a .text span::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #2196f3;
+}
+
+.tab li a:hover .text span {
+    transform: translateY(-20px);
+}
+
+/*now, make it responsive */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+    }
+}
