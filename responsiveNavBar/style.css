@@ -110,5 +110,28 @@ body {
 @media (max-width: 768px) {
     ul {
         flex-direction: column;
+        padding: 20px 30px;
+        width: 300px;
+    }
+
+    .tab li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    li:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .tab li a .icon {
+        margin: 0 auto;
+    }
+
+    .tab li a .text {
+        text-align: start;
     }
 }
